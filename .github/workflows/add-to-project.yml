@@ -1,0 +1,100 @@
+name: Add Issue to Project
+
+# Trigger the workflow when issues are opened
+on:
+  issues:
+    types:
+      - opened
+
+# Environment variables for configuration
+env:
+  # Set this to your GitHub project URL (organization or user project)
+  # Example: https://github.com/orgs/microsoft/projects/123
+  PROJECT_URL: "${{ vars.PROJECT_URL || 'https://github.com/orgs/microsoft/projects/1' }}"
+
+jobs:
+  # Job to add new issues to the GitHub project
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    if: github.event.issue
+    
+    steps:
+      - name: Add issue to project
+        uses: actions/add-to-project@v1.0.2
+        with:
+          project-url: ${{ env.PROJECT_URL }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+  # Job to apply labels to new issues  
+  label_issues:
+    name: Apply labels to issues
+    runs-on: ubuntu-latest
+    if: github.event.issue
+    
+    steps:
+      - name: Apply default labels
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            // Define default labels to apply to new issues
+            const labelsToAdd = [
+              'triage',
+              'ignite-lab'
+            ];
+            
+            // Apply labels to the issue
+            try {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: labelsToAdd
+              });
+              
+              console.log(`Successfully added labels: ${labelsToAdd.join(', ')}`);
+            } catch (error) {
+              console.log(`Error adding labels: ${error.message}`);
+              // Don't fail the workflow if label addition fails
+            }
+            
+      - name: Apply priority label based on issue content
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issueBody = context.payload.issue.body || '';
+            const issueTitle = context.payload.issue.title || '';
+            
+            // Determine priority based on keywords
+            let priorityLabel = '';
+            
+            if (issueTitle.toLowerCase().includes('urgent') || 
+                issueBody.toLowerCase().includes('urgent') ||
+                issueTitle.toLowerCase().includes('critical') || 
+                issueBody.toLowerCase().includes('critical')) {
+              priorityLabel = 'priority:high';
+            } else if (issueTitle.toLowerCase().includes('bug') || 
+                       issueBody.toLowerCase().includes('bug') ||
+                       issueTitle.toLowerCase().includes('error') || 
+                       issueBody.toLowerCase().includes('error')) {
+              priorityLabel = 'priority:medium';
+            } else {
+              priorityLabel = 'priority:low';
+            }
+            
+            // Apply priority label
+            try {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: [priorityLabel]
+              });
+              
+              console.log(`Successfully added priority label: ${priorityLabel}`);
+            } catch (error) {
+              console.log(`Error adding priority label: ${error.message}`);
+              // Don't fail the workflow if label addition fails
+            }
