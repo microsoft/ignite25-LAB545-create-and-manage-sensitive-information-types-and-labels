@@ -7,7 +7,7 @@ lab:
 
 # Lab 1 - Exercise 1 - Create and manage sensitive information types
 
-Megan Bowen, the Information Security Administrator at Contoso Ltd., is updating the organization's information protection strategy after previous incidents involving the unintentional sharing of personal data in support tickets. She needs to create and test custom sensitive information types that help detect employee IDs and references to personal health information in documents and emails.
+Megan Bowen, the Information Security Administrator at Contoso Ltd., is updating the organization's information protection strategy to reduce the risk of sensitive data showing up in Microsoft 365 Copilot. After previous incidents where personal data surfaced in support tickets, she needs to create and test custom sensitive information types that detect Contoso project codes and other sensitive information. These classifications will later support labels and policies that protect content from being exposed in Copilot or shared inappropriately.
 
 **Tasks**:
 
@@ -131,7 +131,7 @@ In this task, you'll confirm that the custom sensitive information type (SIT) fo
 
 1. On the **Match results** page, review the results, then select **Finish**.
 
-You've successfully tested the custom sensitive information type for project codes. Testing confirms the SIT works as intended, so you can use it in policies like auto-apply sensitivity labels.
+You've successfully tested the custom sensitive information type for project codes. Testing confirms the SIT works as intended, so you can now use it to help protect sensitive content across Microsoft Purview.
 
 ## Task 4 – Create a parent sensitivity label
 
@@ -303,3 +303,9 @@ In this task, you'll configure an auto-apply policy so that the **Project data**
 1. On the confirmation page, select **Done**.
 
 You've successfully configured an auto-apply policy for project data. Any content containing Contoso project codes is automatically labeled with the Project data sensitivity label.
+
+## Lab 1 complete
+
+In this lab, you created and tested a custom sensitive information type, built sensitivity labels, and published them so they could be applied across Microsoft 365. You also configured an auto-apply policy that detects Contoso project codes and automatically labels the content. With these protections in place, sensitive project data is classified and marked before it can surface in Copilot or other Microsoft 365 apps.
+
+If you’d like to extend this scenario, continue to the bonus task to see how you can use a Data Loss Prevention (DLP) policy to further control how labeled project data is shared in Microsoft 365 Copilot.
