@@ -209,7 +209,7 @@ You've created a sublabel that applies a footer to project data. When used with 
 
 ## Task 6 – Publish sensitivity labels
 
-Now that you've created a parent label and a sublabel, you'll publish them so they're available for users to apply manually in apps like Word, Excel, and Outlook. Publishing also makes the sublabel available for the auto-apply policy you'll configure next.
+You've created a sublabel that applies a footer to project data. When used with an auto-apply policy, this label automatically classifies project documents and emails and makes them clearly identifiable, reducing the chance they surface in Copilot responses.
 
 1. In the Microsoft Purview portal, under **Information Protection**, expand **Policies** then select **Label publishing policies**.
 
@@ -238,7 +238,7 @@ You've successfully published the Internal and Project data sensitivity labels. 
 
 ## Task 7 – Configure auto-apply labeling
 
-In this task, you'll configure an auto-apply policy so that the **Project data** sublabel is automatically applied when Contoso project codes are detected. This ensures project data is consistently protected without relying on users to manually apply the label.
+In this task, you'll configure an auto-apply policy so that the Project data sublabel is automatically applied when Contoso project codes are detected. This ensures project data is consistently protected without relying on users to manually apply the label.
 
 1. In the Microsoft Purview portal, under **Information Protection**, expand **Policies** then select **Auto-labeling policies**.
 
@@ -302,10 +302,10 @@ In this task, you'll configure an auto-apply policy so that the **Project data**
 
 1. On the confirmation page, select **Done**.
 
-You've successfully configured an auto-apply policy for project data. Any content containing Contoso project codes is automatically labeled with the Project data sensitivity label.
+You've successfully configured an auto-apply policy for project data. Any content containing Contoso project codes is automatically labeled with the Project data sensitivity label, helping prevent sensitive information from appearing in Copilot responses or being shared inappropriately.
 
 ## Lab 1 complete
 
 In this lab, you created and tested a custom sensitive information type, built sensitivity labels, and published them so they could be applied across Microsoft 365. You also configured an auto-apply policy that detects Contoso project codes and automatically labels the content. With these protections in place, sensitive project data is classified and marked before it can surface in Copilot or other Microsoft 365 apps.
 
-If you’d like to extend this scenario, continue to the bonus task to see how you can use a Data Loss Prevention (DLP) policy to further control how labeled project data is shared in Microsoft 365 Copilot.
+If you'd like to extend this scenario, continue to the bonus task to see how you can use a Data Loss Prevention (DLP) policy to further control how labeled project data is shared in Microsoft 365 Copilot.
