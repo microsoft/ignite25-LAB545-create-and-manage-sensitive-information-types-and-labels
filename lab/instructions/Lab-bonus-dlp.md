@@ -66,4 +66,4 @@ With classification in place, you’ll now create a DLP policy in Microsoft Purv
 
 1. On the **New policy created** page select **Done**.
 
-You created a DLP policy for Microsoft 365 Copilot that targets the Project data label and runs in simulation mode. This adds a guardrail on top of labeling by restricting Copilot from processing labeled project content.
+You created a DLP policy for Microsoft 365 Copilot that targets the Project data label and runs in simulation mode. This adds a guardrail on top of labeling by preventing Copilot from processing content labeled as project data.
