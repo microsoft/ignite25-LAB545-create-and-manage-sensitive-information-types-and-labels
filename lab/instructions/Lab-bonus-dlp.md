@@ -1,6 +1,14 @@
-## Bonus Task – Create a DLP policy in simulation mode
+# Bonus task – Create a DLP policy for Copilot
 
-In this task, you'll create a DLP policy in simulation mode that targets credit card numbers in Teams messages. The policy will notify users when they attempt to share sensitive content and allow them to override with justification.
+Megan Bowen has already classified Contoso project data with sensitivity labels. To strengthen protections, she now needs to add a safeguard that prevents Microsoft 365 Copilot from processing content marked with the Project data label. This helps Contoso reduce the chance of sensitive information being used in prompts or responses.
+
+**Task**:
+
+- Create a DLP policy in simulation mode
+
+## Task 1 – Create a DLP policy in simulation mode
+
+With classification in place, you’ll now create a DLP policy in Microsoft Purview that targets content labeled as project data. The policy will run in simulation mode and prevent Copilot from processing labeled content.
 
 1. In the Microsoft Purview portal, navigate to **Solutions** > **Data Loss Prevention** > **Policies**.
 
@@ -14,8 +22,8 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
 
 1. On the **Name your DLP policy** page enter:
 
-   - **Name**: `Block with override project data in Copilot`
-   - **Description**: `Detects Contoso project codes in Copilot prompts and blocks sharing, with override option.`
+   - **Name**: `Block project data in Copilot`
+   - **Description**: `Restricts Copilot from processing content labeled as project data.`
 
 1. Select **Next**.
 
@@ -30,63 +38,32 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
 1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
 
 1. In the **Create rule** flyout:
-    - In the **Name** field, enter `Block project data in Copilot`.
 
-1. Under **Conditions**, select **+ Add condition** > **Content content contains**.
+   - In the **Name** field, enter `Block project data in Copilot`.
+
+1. Under **Conditions**, select **+ Add condition** > **Content contains**.
 
 1. In the **Content contains** section, select **Add** > **Sensitivity labels**.
 
+   ![Screenshot of the Conditions pane in Microsoft Purview with Content contains selected and the Add menu showing Sensitivity labels.](./media/dlp-condition-sensitivity-label.png)
 
+1. In the **Sensitivity labels** flyout, select the checkbox next to the **Project data** label, then select **Add**.
 
+1. Back on the **Create rule** flyout, under **Actions**, select **+ Add an action** > **Restrict Copilot from processing content**.
 
+1. Select **Save** at the bottom of the flyout.
 
+1. Back on the **Customize advanced DLP rules** page, select **Next**.
 
+1. On the **Policy mode** page, select Run the policy in simulation mode, then select both checkboxes:
 
-
-1. On the **Define policy settings** page, select **Create or customize advanced DLP rules**, then select **Next**.
-
-1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
-
-1. In the **Create rule** flyout:
-    - In the **Name** field, enter `Credit card information`.
-
-1. Under **Conditions**, select **+ Add condition** > **Content is shared from Microsoft 365**.
-
-1. In the **Content is shared from Microsoft 365** section:
-    - Select the option for **with people outside my organization**.
-
-1. Select **+ Add condition** > **Content contains**.
-
-1. In the new **Content contains** section:
-    - Select **Add** > **Sensitive info types**.
-    - On the **Sensitive info types** page, search for and select `Credit Card Number`, then select **Add**.
-
-1. Under **Actions**, select **+ Add an action** > **Restrict access or encrypt the content in Microsoft 365 locations**.
-
-1. In the **Restrict access or encrypt the content** section:
-    - Select **Block only people outside your organization**.
-
-1. Under **User notifications**:
-    - Turn on the toggle for **Use notifications to inform your users and help educate them on the proper use of sensitive info.**.
-    - Select the checkbox for **Notify users in Office 365 service with a policy tip**.
-
-1. Under **User overrides**:
-    - Select the checkbox for **Allow users to override policy restrictions** (Fabric, Exchange, SharePoint, OneDrive, and Teams).
-    - Select the checkbox for **Require a business justification to override**.
-
-1. Under **Incident reports**, in the **Use this severity level in admin alerts and reports** dropdown:
-    - Select **Low**.
-
-1. At the bottom of the **Create rule** flyout panel, select **Save**.
-
-1. Back on the **Customize advanced DLP rules**, select **Next**.
-
-1. On the **Policy mode** page select **Run the policy in simulation mode** and select the checkbox for **Show policy tips while in simulation mode**.
+   - Show policy tips while in simulation mode
+   - Turn the policy on if it's not edited within fifteen days of simulation
 
 1. Select **Next**.
 
-1. On the **Review and finish** page review your settings then select **Submit**.
+1. On the **Review and finish** page, select **Submit**.
 
 1. On the **New policy created** page select **Done**.
 
-You've created a DLP policy that scans Teams content for credit card numbers and allows overrides with business justification.
+You created a DLP policy for Microsoft 365 Copilot that targets the Project data label and runs in simulation mode. This adds a guardrail on top of labeling by restricting Copilot from processing labeled project content.

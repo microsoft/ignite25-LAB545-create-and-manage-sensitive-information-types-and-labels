@@ -1,11 +1,4 @@
----
-lab:
-    title: 'Exercise 1 - Create and manage sensitive information types'
-    module: 'Lab 1 - Implement Information Protection'
----
-
-
-# Lab 1 - Exercise 1 - Create and manage sensitive information types
+# Lab - Protect project data with sensitivity labels in Copilot
 
 Megan Bowen, the Information Security Administrator at Contoso Ltd., is updating the organization's information protection strategy to reduce the risk of sensitive data showing up in Microsoft 365 Copilot. After previous incidents where personal data surfaced in support tickets, she needs to create and test custom sensitive information types that detect Contoso project codes and other sensitive information. These classifications will later support labels and policies that protect content from being exposed in Copilot or shared inappropriately.
 
@@ -294,7 +287,7 @@ In this task, you'll configure an auto-apply policy so that the Project data sub
 
 1. On the **Additional settings for email** page, select **Next**.
 
-1. On the **Decide if you want to test out the policy now or later** page,s elect **Run policy in simulation mode**, and select the checkbox for **Automatically turn on policy if not modified after 7 days in simulation**.
+1. On the **Decide if you want to test out the policy now or later** page, select **Run policy in simulation mode**, and select the checkbox for **Automatically turn on policy if not modified after 7 days in simulation**.
 
 1. Select **Next**.
 
@@ -306,6 +299,6 @@ You've successfully configured an auto-apply policy for project data. Any conten
 
 ## Lab 1 complete
 
-In this lab, you created and tested a custom sensitive information type, built sensitivity labels, and published them so they could be applied across Microsoft 365. You also configured an auto-apply policy that detects Contoso project codes and automatically labels the content. With these protections in place, sensitive project data is classified and marked before it can surface in Copilot or other Microsoft 365 apps.
+You created and tested a custom sensitive information type, built sensitivity labels, published them, and configured auto-apply so project data is labeled consistently. With classification in place, sensitive content is marked before it can surface in Copilot or other Microsoft 365 apps.
 
-If you'd like to extend this scenario, continue to the bonus task to see how you can use a Data Loss Prevention (DLP) policy to further control how labeled project data is shared in Microsoft 365 Copilot.
+If you'd like to extend this scenario, continue to the bonus task to add a DLP safeguard that controls how Copilot handles labeled project data.
