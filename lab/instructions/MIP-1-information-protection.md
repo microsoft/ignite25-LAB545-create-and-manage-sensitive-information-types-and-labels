@@ -1,4 +1,4 @@
-# Lab - Protect project data with sensitivity labels in Copilot
+# Lab – Classify and protect project data with information protection in Copilot
 
 Megan Bowen, the Information Security Administrator at Contoso Ltd., is updating the organization's information protection strategy to reduce the risk of sensitive data showing up in Microsoft 365 Copilot. After previous incidents where personal data surfaced in support tickets, she needs to create and test custom sensitive information types that detect Contoso project codes and other sensitive information. These classifications will later support labels and policies that protect content from being exposed in Copilot or shared inappropriately.
 
@@ -71,11 +71,11 @@ In this task, you'll create a custom sensitive information type (SIT) to detect 
    - **ID**: `Project code keywords`
    - In **Keyword Group #1** under **Case insensitive**:
 
-   ```text
-   Project
-   Code
-   Identifier
-   ```
+    ```text
+    Project
+    Code
+    Identifier
+    ```
 
    - Select the radio button for **Word match**.
    - Select **Done**.
@@ -100,9 +100,9 @@ In this task, you'll confirm that the custom sensitive information type (SIT) fo
 
 1. In Notepad, enter:
 
-   ```text
-   The Contoso project code PR-2025-001 has been assigned to this work.
-   ```
+    ```text
+    The Contoso project code PR-2025-001 has been assigned to this work.
+    ```
 
 1. Select **File** > **Save As**.
 
@@ -184,10 +184,10 @@ Now that you have a base label, you'll create a sublabel specifically for projec
 
 1. In the **Customize footer text** flyout, enter:
 
-   - **Footer text**: `Contoso Project Data – Confidential`
+   - **Footer text**: `Contoso Project Data - Confidential`
    - **Font size**: `10`
-   - **Font color**: `Black`
-   - **Align text**: `Left`
+   - **Font color**: Black
+   - **Align text**: Left
    - Select **Save**.
 
 1. Back on the **Content marking** page, select **Next**.
@@ -220,8 +220,8 @@ You've created a sublabel that applies a footer to project data. When used with 
 
 1. On the **Name your policy** page, enter:
 
-    - **Name**: `Internal project data`
-    - **Description**: `Makes Internal and Project data sensitivity labels available to users.`
+   - **Name**: `Internal project data`
+   - **Description**: `Makes Internal and Project data sensitivity labels available to users.`
 
 1. Select **Next**, then on the **Review and finish** page, select **Submit**.
 
@@ -297,8 +297,8 @@ In this task, you'll configure an auto-apply policy so that the Project data sub
 
 You've successfully configured an auto-apply policy for project data. Any content containing Contoso project codes is automatically labeled with the Project data sensitivity label, helping prevent sensitive information from appearing in Copilot responses or being shared inappropriately.
 
-## Lab 1 complete
+## Lab complete
 
-You created and tested a custom sensitive information type, built sensitivity labels, published them, and configured auto-apply so project data is labeled consistently. With classification in place, sensitive content is marked before it can surface in Copilot or other Microsoft 365 apps.
+You created and tested a custom sensitive information type, built sensitivity labels, published them, and configured auto-apply labeling. With these protections in place, project data is consistently classified and secured before it can appear in Copilot responses or be shared inappropriately.
 
 If you'd like to extend this scenario, continue to the bonus task to add a DLP safeguard that controls how Copilot handles labeled project data.
