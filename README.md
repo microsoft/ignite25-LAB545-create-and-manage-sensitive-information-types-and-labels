@@ -4,10 +4,11 @@
 
 # [Microsoft Ignite 2025](https://ignite.microsoft.com)
 
+---
+
 ## 🔥LAB545: Create and Manage sensitive information types and labels
 
-[![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
-[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/foundry/forum)
+*Workshop for Microsoft AI Tour 2026 – Microsoft Purview Information Protection*
 
 ### Session Description
 
