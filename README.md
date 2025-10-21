@@ -55,7 +55,7 @@ For more information, setup instructions for other dev clients, and to post comm
 
 <table>
 <tr>
-    <td align="center">Chui McConnell
+    <td align="center"><a href="https://github.com/chmcconnell">Chui McConnell <a href="https://github.com/chmcconnell" title="talk">📢</a>
     </td>
 </tr></table>
 
