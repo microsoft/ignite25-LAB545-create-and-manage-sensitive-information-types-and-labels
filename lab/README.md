@@ -1,30 +1,28 @@
 
-
-These instructions are for participants of the **instructor-led** Workshop "SESSIONNAME" at Microsoft AI Tour 2026.  Register to attend in a city near you at [Microsoft AI Tour](https://aitour.microsoft.com/).
+These instructions are for participants of the **instructor-led** Workshop **Create and Manage sensitive information types and labels** at Microsoft AI Tour 2026. Register to attend in a city near you at [Microsoft AI Tour](https://aitour.microsoft.com/).
 
 ## Lab Overview
 
-In this hands-on workshop, you’ll learn to ....
+In this hands-on workshop, you'll use Microsoft Purview Information Protection and Data Loss Prevention (DLP) to classify and protect sensitive project data. You'll create and test custom sensitive information types, build and publish sensitivity labels, configure auto-apply labeling, and add a DLP policy that prevents Microsoft 365 Copilot from processing protected content.
 
-If you're not a workshop participant at AI Tour, try this code yourself at ....
+If you're not attending AI Tour, you can still complete this lab using your own Microsoft 365 E5 environment with access to Microsoft Purview Information Protection and DLP.
 
 ## Pre-Requisites
 
-To participate in this workshop, you will need:
+To participate in this workshop, you'll need:
 
-1. Your own laptop.
-   * It need only be capable of running a browser and GitHub Codespaces, so almost any laptop will do.
-   * A recent version of Edge, Chrome or Safari is recommended.
-2. Prerequisite #2
-3. Prerequisite #3
+1. A laptop with internet access
+   - A recent version of Microsoft Edge, Google Chrome, or Safari is recommended
+1. A Microsoft 365 E5 tenant with Microsoft Purview Information Protection and DLP enabled
+1. Access to the Microsoft Purview portal (https://purview.microsoft.com)
 
 ## Get Started
 
-To get started you will need to
+To get started, open the [lab instructions](.lab/instructions/MIP-1-information-protection.md). If time allows, continue with the [bonus task](.lab/instructions/MIP-2-bonus-dlp.md) to extend your protection setup with a DLP policy for Copilot.
 
 ## Discussions
 
-Build your first agent with Azure AI Agent Service is an open source project supported by Microsoft. See the [SUPPORT.md](../SUPPORT.md) file for details on how to raise issues or contribute. If you enjoyed this workshop please give the repository a ⭐ and share it with others.
+This workshop is part of the Microsoft AI Tour hands-on learning track. If you have feedback or encounter issues, please refer to the [SUPPORT.md](../SUPPORT.md) file for guidance on how to raise issues or contribute. If you found this session helpful, consider giving the repository a ⭐ on GitHub and sharing it with your peers.
 
 ## Source code
 

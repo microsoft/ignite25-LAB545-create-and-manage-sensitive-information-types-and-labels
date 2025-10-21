@@ -35,10 +35,10 @@ This repo is configured for a user to view the docs through mkdocs.
 3. Please limit your repo to one row of badges under the session title.
 
 ## MCP Server
+
 1. This repo has an mcp.json file and is configured to let agents connect to the Learn MCP Server.
 
 > **Important** Make sure to avoid hardcoding sensitive information like API keys and other credentials by using input variables or environment files.
-
 
 ## Update this readme below
 
@@ -50,7 +50,7 @@ This repo is configured for a user to view the docs through mkdocs.
 
 ## Improve SEO
 
-1. Update the Repo Info for this repo 
+1. Update the Repo Info for this repo
     1. Click the gear icon⚙️ in the upper right.
     1. Set a good description of this repo.
     1. Add the technologies that you're using in this session.
@@ -70,28 +70,29 @@ Send them to [Mike Kinsman](mailto:mikki@microsoft.com) and [Laurent Bugnion](lb
 
 # [Microsoft Ignite 2025](https://ignite.microsoft.com)
 
-## 🔥BRKXXX: Create and Manage sensitive information types and labels
+## 🔥LAB545: Create and Manage sensitive information types and labels
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 [![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ### Session Description
 
-*Add Session Description*
+As organizations adopt AI tools like Microsoft 365 Copilot, protecting sensitive data is essential. In this hands-on session, you’ll use Microsoft Purview Information Protection and DLP to classify and secure project data. You’ll create custom sensitive information types, publish sensitivity labels, and add a DLP policy that prevents Copilot from processing protected content.
 
 ### 🧠 Learning Outcomes
 
 By the end of this session, learners will be able to:
 
--  
--
--
+- Create and test custom sensitive information types in Microsoft Purview
+- Build and publish sensitivity labels to classify project data
+- Configure auto-apply labeling to protect sensitive content automatically
+- Create a DLP policy that prevents Copilot from processing protected content
 
 ### 💻 Technologies Used
 
-1.
-1.
-1.
+1. Microsoft Purview Information Protection
+1. Microsoft Purview Data Loss Prevention (DLP)
+1. Microsoft Purview Audit
 
 ### 🌟 Microsoft Learn MCP Server
 
@@ -108,10 +109,9 @@ For more information, setup instructions for other dev clients, and to post comm
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
 | Ignite 2025 Next Steps | [https://aka.ms/Ignite25-Next-Steps](https://aka.ms/Ignite25-Next-Steps?ocid=ignite25_nextsteps_cnl) | Links to all repos for AI Tour 26 Sessions |
-| Azure AI Foundry Community Discord | [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)| Connect with the Azure AI Foundry Community! |
 | Learn at Ignite | [https://aka.ms/LearnAtIgnite](https://aka.ms/LearnAtIgnite?ocid=ignite25_nextsteps_github_cnl) | Continue learning on Microsoft Learn |
 
-## Content Owners
+## Content Owner
 
 <!-- TODO: Add yourself as a content owner
 1. Change the src in the image tag to {your github url}.png
@@ -120,22 +120,9 @@ For more information, setup instructions for other dev clients, and to post comm
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE"
-"/><br />
-        <sub><b> INSERT NAME HERE
-</b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
-    </td>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE
-"/><br />
-        <sub><b>INSERT NAME HERE
-</b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+    <td align="center">Chui McConnell
     </td>
 </tr></table>
-
 
 ## Contributing
 
