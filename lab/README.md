@@ -18,7 +18,7 @@ To participate in this workshop, you'll need:
 
 ## Get Started
 
-To get started, open the [lab instructions](.lab/instructions/MIP-1-information-protection.md). If time allows, continue with the [bonus task](.lab/instructions/MIP-2-bonus-dlp.md) to extend your protection setup with a DLP policy for Copilot.
+To get started, open the [lab instructions](./instructions/MIP-1-information-protection.md). If time allows, continue with the [bonus task](./instructions/MIP-2-bonus-dlp.md) to extend your protection setup with a DLP policy for Copilot.
 
 ## Discussions
 
