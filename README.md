@@ -12,7 +12,7 @@
 
 ### Session Description
 
-As organizations adopt AI tools like Microsoft 365 Copilot, protecting sensitive data is essential. In this hands-on session, you’ll use Microsoft Purview Information Protection and DLP to classify and secure project data. You’ll create custom sensitive information types, publish sensitivity labels, and add a DLP policy that prevents Copilot from processing protected content.
+As organizations adopt AI tools like Microsoft 365 Copilot, protecting sensitive data is essential. In this hands-on session, you'll use Microsoft Purview Information Protection and DLP to classify and secure project data. You'll create custom sensitive information types, publish sensitivity labels, and add a DLP policy that prevents Copilot from processing protected content.
 
 ### 🧠 Learning Outcomes
 
@@ -29,15 +29,16 @@ By the end of this session, learners will be able to:
 1. Microsoft Purview Data Loss Prevention (DLP)
 1. Microsoft Purview Audit
 
-### 🌟 Microsoft Learn MCP Server
+### What you'll do
 
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Docs_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft.docs.mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D)
+In this lab, you'll:
 
-The Microsoft Learn MCP Server is a remote MCP Server that enables clients like GitHub Copilot and other AI agents to bring trusted and up-to-date information directly from Microsoft's official documentation. Get started by using the one-click button above for VSCode or access the [mcp.json](.vscode/mcp.json) file included in this repo.
-
-For more information, setup instructions for other dev clients, and to post comments and questions, visit our Learn MCP Server GitHub repo at [https://github.com/MicrosoftDocs/MCP](https://github.com/MicrosoftDocs/MCP). Find other MCP Servers to connect your agent to at [https://mcp.azure.com](https://mcp.azure.com).
-
-*Note: When you use the Learn MCP Server, you agree with [Microsoft Learn](https://learn.microsoft.com/en-us/legal/termsofuse) and [Microsoft API Terms](https://learn.microsoft.com/en-us/legal/microsoft-apis/terms-of-use) of Use.*
+- Enable auditing in Microsoft Purview
+- Create and test a custom sensitive information type
+- Build a parent and sublabel structure for project data
+- Publish sensitivity labels for manual and auto-apply use
+- Configure an auto-apply policy to label project data automatically
+- (Optional) Create a DLP policy that prevents Copilot from processing protected content
 
 ### 📚 Resources and Next Steps
 

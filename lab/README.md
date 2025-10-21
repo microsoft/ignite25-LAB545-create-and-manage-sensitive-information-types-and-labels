@@ -1,4 +1,3 @@
-
 These instructions are for participants of the **instructor-led** Workshop **Create and Manage sensitive information types and labels** at Microsoft AI Tour 2026. Register to attend in a city near you at [Microsoft AI Tour](https://aitour.microsoft.com/).
 
 ## Lab Overview
