@@ -2,11 +2,11 @@ These instructions are for participants of the **instructor-led** Workshop **Cre
 
 ## Lab Overview
 
-In this hands-on workshop, you'll use Microsoft Purview Information Protection and Data Loss Prevention (DLP) to classify and protect sensitive project data. You'll create and test custom sensitive information types, build and publish sensitivity labels, configure auto-apply labeling, and add a DLP policy that prevents Microsoft 365 Copilot from processing protected content.
+In this workshop, you'll use Microsoft Purview Information Protection and Data Loss Prevention (DLP) to classify and protect sensitive project data. You'll create and test custom sensitive information types, build and publish sensitivity labels, configure auto-apply labeling, and add a DLP policy that prevents Microsoft 365 Copilot from processing protected content.
 
 If you're not attending AI Tour, you can still complete this lab using your own Microsoft 365 E5 environment with access to Microsoft Purview Information Protection and DLP.
 
-## Pre-Requisites
+## Prerequisites
 
 To participate in this workshop, you'll need:
 
