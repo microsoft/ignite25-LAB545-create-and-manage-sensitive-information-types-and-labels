@@ -40,6 +40,11 @@ In this lab, you'll:
 - Configure an auto-apply policy to label project data automatically
 - (Optional) Create a DLP policy that prevents Copilot from processing protected content
 
+### 🔗 Resources
+
+- [Discord](https://aka.ms/AIFoundryDiscord-Ignite25) - Join our community for support and discussions
+- [GitHub Discussions](https://aka.ms/AIFoundryForum-Ignite25) - Ask questions and share feedback
+
 ### 📚 Resources and Next Steps
 
 | Resources          | Links                             | Description        |
